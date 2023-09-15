@@ -1,0 +1,36 @@
+/* Set the background color of the entire page to whitesmoke. */
+body {
+    background-color: whitesmoke;
+}
+
+/* Define styles for the elements with the class "app". */
+.app {
+    /* Set the width to 70% of its parent container. */
+    width: 70%;
+    /* Remove any left margin to align it with the left edge of its container. */
+    margin-left: 0px;
+}
+
+/* Apply styles to the element with the ID "main-app". */
+#main-app {
+    /* Create a flex container with a horizontal direction (row). */
+    display: flex;
+    flex-direction: row;
+}
+
+/* Define styles for the elements with the class "aside". */
+.aside {
+    /* Set the width to 30% of its parent container. */
+    width: 30%;
+    /* Remove any right margin to align it with the right edge of its container. */
+    margin-right: 0px;
+    /* Add a top margin of 80px to create space from the top. */
+    margin-top: 80px;
+    /* Allow the height to adjust automatically based on content. */
+    height: auto;
+}
+
+/* Hide the scrollbar in WebKit browsers (Chrome, Safari). */
+::-webkit-scrollbar {
+    display: none;
+}

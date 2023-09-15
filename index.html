@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c348d4c177.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopify</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand bg-body-tertiary navbar-default sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shopify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-shake"
+                                style="color: #da1010;"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="main-app">
+        <div class="container app">
+            <div class="row">
+
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="Sweet-German-Chocolate-min-300x214.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Sweet German Chocolate(₹400)</h5>
+                            <p class="card-text">
+                                Sweet German chocolate is a dark baking chocolate created by a man named Samuel German,
+                                who
+                                gave it it’s name. He created this chocolate to be convenient for bakers and added sugar
+                                directly to it.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-1"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="1">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="1">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="White-Chocolate-min-300x200.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">White Chocolate(₹600)</h5>
+                            <p class="card-text">
+                                White chocolate does not contain chocolate liquor or any other cocoa products besides
+                                cocoa
+                                butter. It doesn’t have a very chocolatey taste, but resembles smooth vanilla.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-2"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="2">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="2">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="dark-chocolate-min-300x200.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Dark Chocolate(₹500)</h5>
+                            <p class="card-text">
+                                Dark chocolate contains chocolate liquor, sugar, and cocoa butter. It also commonly
+                                includes
+                                lecithin as an emulsifier and vanilla for flavor. Dark chocolate does not contain any
+                                milk
+                                solids.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-3"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="3">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="3">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="Semisweet-Chocolate-min-220x300.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Semisweeet Chocolate(₹900)</h5>
+                            <p class="card-text">
+                                Semisweet chocolate contains at least 35 percent cocoa solids, but there are no official
+                                guidelines that govern what can be called “semisweet.” Semisweet chocolate falls
+                                somewhere
+                                between bittersweet chocolate and sweet dark chocolate.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-4"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="4">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="4">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="bittersweet-chocolate-min-300x201.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title"> Bittersweet Chocolate(₹300)</h5>
+                            <p class="card-text">
+                                Bittersweet chocolate must contain at least 35 percent cocoa according to the FDA, but
+                                most
+                                bittersweet bars contain 50 percent, with others having as much as 80 percent cocoa.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-5"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="5">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="5">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="Unsweetened-chocolate-1-min-300x178.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Unsweetened Chocolate(₹900)</h5>
+                            <p class="card-text">
+                                Unsweetened chocolate is just like its name implies. It’s pure chocolate liquor, made of
+                                simply of ground cocoa beans. It’s also known as baking chocolate, because it’s not
+                                meant
+                                for consumption on its own.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-6"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="6">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="6">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="Cocoa-Powder-min-300x193.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Cocoa Powder(₹800)</h5>
+                            <p class="card-text">
+                                Cocoa powder is also comprised of 100 percent cacao with no sugar, but has had the cocoa
+                                butter extracted out. Cocoa powder is also very bitter, but is commonly used in recipes.
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-7"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="7">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="7">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="milk-chocolate-min-200x300.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Milk Chocolate(₹300)</h5>
+                            <p class="card-text">
+                                Milk chocolate is perhaps the most popular type of chocolate. It actually contains only
+                                ten
+                                to 40 percent cacao mixed with sugar and milk (either condensed milk or milk solids).
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-8"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="8">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="8">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                        <img src="Couverture-Chocolate-min-300x200.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title"> Couverture Chocolate(₹900)</h5>
+                            <p class="card-text">
+                                Couverture chocolate is an expensive type of chocolate that contains a higher percentage
+                                of
+                                cocoa butter than other varieties. The high cocoa butter content helps it melt quickly
+                            </p>
+                            <p id="">No of Peices : <span id="quantity-9"> 0</span></p>
+                            <a href="#" class="btn btn-primary" onclick="additem(event)" data-id="9">Add To Cart</a>
+                            <a href="#" class="btn btn-danger" onclick="removeitem(event)" data-id="8">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="container aside fixed-top">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1 style="color: #da1010;">CHECKOUT</h1>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><span><a href="" onclick="decreaseBoxes(event)"><i
+                                    class="fa-solid fa-minus"></i></a></span> NO OF BOXES : <span id="boxes">1</span>
+                        <span><a href="" onclick="increaseBoxes(event)"><i class="fa-solid fa-plus"></i></a></span></h5>
+                    <p class="card-text">
+                    <h5>PRICE(₹)</h5> <span id="CheckOut">0</span> INR</p>
+                    <a href="#" class="btn btn-primary">PURCHASE</i></a>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
